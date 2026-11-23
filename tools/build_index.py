@@ -20,7 +20,9 @@ def front_matter(path):
 
 
 def fmt(w):
-    return "" if w is None else f"{w:g} W"
+    if w is None:
+        return ""
+    return f"{w:g} W" if isinstance(w, (int, float)) else f"{w} W"
 
 
 def build_rows():
@@ -43,9 +45,12 @@ def build_rows():
             continue
         name = f"[{meta['brand']} {meta['model']}]({rel})"
         for p in meta.get("power") or []:
+            state = p.get("state", "")
+            if isinstance(state, bool):  # YAML reads bare on/off as true/false
+                state = "on" if state else "off"
             rows.append((
                 meta["brand"].lower(), meta["model"].lower(),
-                f"| {name} | {meta['category']} | {p.get('state', '')} | "
+                f"| {name} | {meta['category']} | {state} | "
                 f"{fmt(p.get('typical_w'))} | {fmt(p.get('peak_w'))} |",
             ))
     return [r[2] for r in sorted(rows)], errors
