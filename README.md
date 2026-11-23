@@ -7,27 +7,28 @@ Every device has its own page under [`devices/`](devices/). The table below is b
 ## Power draw
 
 <!-- POWER-TABLE:START -->
-| Device | Category | State | Typical | Peak |
-|---|---|---|---|---|
-| [Apple AirPort Extreme (6th gen, 802.11ac)](devices/apple/airport-extreme-6th-gen.md) | Wi-Fi router | Wi-Fi off, Ethernet only | 5.3 W |  |
-| [Apple AirPort Extreme (6th gen, 802.11ac)](devices/apple/airport-extreme-6th-gen.md) | Wi-Fi router | Wi-Fi on | 8 W |  |
-| [BenQ PD2700U](devices/benq/pd2700u.md) | Monitor (27-inch 4K) | computer asleep | 0.4 W | 20 W |
-| [BenQ PD2700U](devices/benq/pd2700u.md) | Monitor (27-inch 4K) | in use | 22–25 W | 30 W |
-| [BenQ PD2700U](devices/benq/pd2700u.md) | Monitor (27-inch 4K) | off (power button) | 0.0–0.2 W |  |
-| [De'Longhi Capsule HFX30C18.IW](devices/delonghi/hfx30c18-iw.md) | Ceramic fan heater | fan only | 6.5 W |  |
-| [De'Longhi Capsule HFX30C18.IW](devices/delonghi/hfx30c18-iw.md) | Ceramic fan heater | heat setting 1 (low), thermostat at max | 679 W |  |
-| [De'Longhi Capsule HFX30C18.IW](devices/delonghi/hfx30c18-iw.md) | Ceramic fan heater | heat setting 2 (high), thermostat at max | 1168 W |  |
-| [De'Longhi Capsule HFX30C18.IW](devices/delonghi/hfx30c18-iw.md) | Ceramic fan heater | off | 0 W |  |
-| [IKEA GRILLPLATS](devices/ikea/grillplats.md) | Smart plug | Thread mode, off | 0.1–0.2 W |  |
-| [IKEA GRILLPLATS](devices/ikea/grillplats.md) | Smart plug | Thread mode, on, nothing plugged in | 0.4 W |  |
-| [IKEA GRILLPLATS](devices/ikea/grillplats.md) | Smart plug | Zigbee mode, off | 0 W |  |
-| [IKEA GRILLPLATS](devices/ikea/grillplats.md) | Smart plug | Zigbee mode, on, nothing plugged in | 0.4 W |  |
-| [IKEA INSPELLING](devices/ikea/inspelling.md) | Smart plug | off | 0.1 W |  |
-| [IKEA INSPELLING](devices/ikea/inspelling.md) | Smart plug | on, nothing plugged in | 0.6–0.8 W |  |
-| [Meta Portal (2nd gen, 10-inch)](devices/meta/portal-2nd-gen.md) | Smart display | on, screen off | 1.0–1.2 W | 3 W |
-| [Meta Portal (2nd gen, 10-inch)](devices/meta/portal-2nd-gen.md) | Smart display | screen on (screensaver) | 1.6 W | 3.5 W |
-| [Sonoff SNZB-06P](devices/sonoff/snzb-06p.md) | Zigbee presence sensor | normal operation | 0.1 W | 0.1 W |
-| [Sonoff SNZB-06P24](devices/sonoff/snzb-06p24.md) | Zigbee presence sensor | normal operation | 0.1 W | 0.5 W |
+<table>
+<tr><th>Device</th><th>Category</th><th>State</th><th>Typical</th><th>Peak</th></tr>
+<tr><td rowspan="2"><a href="devices/apple/airport-extreme-6th-gen.md">Apple AirPort Extreme (6th gen, 802.11ac)</a></td><td rowspan="2">Wi-Fi router</td><td>Wi-Fi on</td><td>8 W</td><td></td></tr>
+<tr><td>Wi-Fi off, Ethernet only</td><td>5.3 W</td><td></td></tr>
+<tr><td rowspan="3"><a href="devices/benq/pd2700u.md">BenQ PD2700U</a></td><td rowspan="3">Monitor (27-inch 4K)</td><td>in use</td><td>22–25 W</td><td>30 W</td></tr>
+<tr><td>computer asleep</td><td>0.4 W</td><td>20 W</td></tr>
+<tr><td>off (power button)</td><td>0.0–0.2 W</td><td></td></tr>
+<tr><td rowspan="4"><a href="devices/delonghi/hfx30c18-iw.md">De&#x27;Longhi Capsule HFX30C18.IW</a></td><td rowspan="4">Ceramic fan heater</td><td>heat setting 2 (high), thermostat at max</td><td>1168 W</td><td></td></tr>
+<tr><td>heat setting 1 (low), thermostat at max</td><td>679 W</td><td></td></tr>
+<tr><td>fan only</td><td>6.5 W</td><td></td></tr>
+<tr><td>off</td><td>0 W</td><td></td></tr>
+<tr><td rowspan="4"><a href="devices/ikea/grillplats.md">IKEA GRILLPLATS</a></td><td rowspan="4">Smart plug</td><td>Thread mode, on, nothing plugged in</td><td>0.4 W</td><td></td></tr>
+<tr><td>Thread mode, off</td><td>0.1–0.2 W</td><td></td></tr>
+<tr><td>Zigbee mode, on, nothing plugged in</td><td>0.4 W</td><td></td></tr>
+<tr><td>Zigbee mode, off</td><td>0 W</td><td></td></tr>
+<tr><td rowspan="2"><a href="devices/ikea/inspelling.md">IKEA INSPELLING</a></td><td rowspan="2">Smart plug</td><td>on, nothing plugged in</td><td>0.6–0.8 W</td><td></td></tr>
+<tr><td>off</td><td>0.1 W</td><td></td></tr>
+<tr><td rowspan="2"><a href="devices/meta/portal-2nd-gen.md">Meta Portal (2nd gen, 10-inch)</a></td><td rowspan="2">Smart display</td><td>on, screen off</td><td>1.0–1.2 W</td><td>3 W</td></tr>
+<tr><td>screen on (screensaver)</td><td>1.6 W</td><td>3.5 W</td></tr>
+<tr><td><a href="devices/sonoff/snzb-06p.md">Sonoff SNZB-06P</a></td><td>Zigbee presence sensor</td><td>normal operation</td><td>0.1 W</td><td>0.1 W</td></tr>
+<tr><td><a href="devices/sonoff/snzb-06p24.md">Sonoff SNZB-06P24</a></td><td>Zigbee presence sensor</td><td>normal operation</td><td>0.1 W</td><td>0.5 W</td></tr>
+</table>
 <!-- POWER-TABLE:END -->
 
 ## Licence
